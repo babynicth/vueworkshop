@@ -2,16 +2,29 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <facultly/>
+    <Test/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Vue from "vue";
+import facultly from './components/faculty.vue';
+import HelloWorld from './components/HelloWorld.vue';
+import Test from './components/Test.vue';
 
+import {BootstrapVue , IconsPlugin} from 'bootstrap-vue'
+import "bootstrap/dist/css/bootstrap.css"
+import "bootstrap-vue/dist/bootstrap-vue.css"
+
+Vue.use(BootstrapVue)
+Vue.use(IconsPlugin)
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    facultly,
+    Test,
   }
 }
 </script>
