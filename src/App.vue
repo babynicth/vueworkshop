@@ -1,32 +1,34 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-    <facultly/>
-    <Test/>
+    <img alt="Vue logo" src="./assets/logo.png" />
+    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <Employee /> 
   </div>
 </template>
 
 <script>
 import Vue from "vue";
-import facultly from './components/faculty.vue';
-import HelloWorld from './components/HelloWorld.vue';
-import Test from './components/Test.vue';
+// import Employee
+import Employee from "./components/Employee.vue";
+// import facultly from './components/faculty.vue';
+// import HelloWorld from './components/HelloWorld.vue';
+// import Test from './components/Test.vue';
 
-import {BootstrapVue , IconsPlugin} from 'bootstrap-vue'
-import "bootstrap/dist/css/bootstrap.css"
-import "bootstrap-vue/dist/bootstrap-vue.css"
+import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap-vue/dist/bootstrap-vue.css";
 
-Vue.use(BootstrapVue)
-Vue.use(IconsPlugin)
+Vue.use(BootstrapVue);
+Vue.use(IconsPlugin);
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld,
-    facultly,
-    Test,
-  }
-}
+    // HelloWorld,
+    // facultly,
+    // Test,
+    Employee,
+  },
+};
 </script>
 
 <style>
