@@ -1,18 +1,19 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
+    <!--<img alt="Vue logo" src="./assets/logo.png" /> -->
     <HelloWorld msg="Welcome to Your Vue.js App" />
-    <Employee /> 
+    <penparnaja /> 
   </div>
 </template>
 
 <script>
 import Vue from "vue";
 // import Employee
-import Employee from "./components/Employee.vue";
+// import Employee from "./components/Employee.vue";
 // import facultly from './components/faculty.vue';
 // import HelloWorld from './components/HelloWorld.vue';
 // import Test from './components/Test.vue';
+import penparnaja from "./components/penparnaja.vue";
 
 import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
 import "bootstrap/dist/css/bootstrap.css";
@@ -26,7 +27,8 @@ export default {
     // HelloWorld,
     // facultly,
     // Test,
-    Employee,
+    // Employee,
+    penparnaja,
   },
 };
 </script>
