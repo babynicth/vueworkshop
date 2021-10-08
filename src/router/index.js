@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 //import Home from '../views/Home.vue'
 import Student from '@/components/Student.vue'
 import Page1 from '@/components/Page1.vue'
+import Page2 from '@/components/Page2.vue'
 
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import "bootstrap/dist/css/bootstrap.css"
@@ -24,9 +25,14 @@ const routes = [
     component: Student
   },
   {
-    path: '/page1/:id',
+    path: '/page1/:id/:fname/:lname/:gender/:picked',
     name: 'Page1',
     component: Page1
+  },
+  {
+    path: '/page2',
+    name: 'Page2',
+    component: Page2
   },
   {
     path: '/about',

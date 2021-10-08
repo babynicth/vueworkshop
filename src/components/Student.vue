@@ -36,6 +36,10 @@
             <input type="submit" value="Submit" >
 
         </form>
+        <br>
+        <button type="button" class="btn btn-primary" v-on:dblclick="gotop2">
+      หน้า 2
+    </button>
     </div>
 </template>
 <script>
@@ -73,10 +77,14 @@ export default {
             }
             else
             {
-                router.push(`/page1/${this.id}`)
+                router.push(`/page1/${this.id}/${this.fname}/${this.lname}/${this.gender}/${this.picked}`)
                 router.go()
             }
             e.preventDefault();
+        },
+        gotop2(){
+            router.push(`/page2`);
+            router.go();
         }
     }
 }
