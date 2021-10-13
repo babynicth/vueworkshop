@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-//import Home from '../views/Home.vue'
-import Student from '@/components/Student.vue'
+import Home from '../views/Home.vue'
+//import Student from '@/components/Student.vue'
 import Page1 from '@/components/Page1.vue'
 import Page2 from '@/components/Page2.vue'
 
@@ -19,15 +19,15 @@ Vue.use(VueRouter)
 Vue.use(axios, VueAxios)
 
 const routes = [
+//  {
+//    path: '/',
+//    name: 'Student',
+//    component: Student
+//  },
   {
     path: '/',
-    name: 'Student',
-    component: Student
-  },
-  {
-    path: '/page1/:id/:fname/:lname/:gender/:picked',
-    name: 'Page1',
-    component: Page1
+    name: 'Home',
+    component: Home
   },
   {
     path: '/page2',
